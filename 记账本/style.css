@@ -1,0 +1,174 @@
+ /* ====== 基础样式 ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+    background: #f5f6f8;
+    color: #333;
+    min-height: 100vh;
+  }
+  /* 整个页面居中，限制最大宽度 */
+  .app {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  /* ====== 顶部 ====== */
+  .header {
+    text-align: center;
+    padding: 30px 0 20px;
+  }
+
+  .header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+  }
+
+  .header p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 8px;
+  }
+
+  /* ====== 三张统计卡片 ====== */
+  .summary {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  .card {
+    flex: 1;
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .card span:first-child {
+    display: block;
+    font-size: 13px;
+    color: #999;
+    margin-bottom: 8px;
+  }
+
+  .card span:last-child {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2c3e50;
+  }
+
+  /* ====== 表单区域 ====== */
+  .form-area {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .form-area h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #2c3e50;
+  }
+
+  .form-area label {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    margin: 12px 0 4px;
+  }
+
+  .form-area select,
+  .form-area input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: inherit;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+
+  .form-area select:focus,
+  .form-area input:focus {
+    border-color: #4a90d9;
+  }
+
+  .form-area button {
+    width: 100%;
+    margin-top: 16px;
+    padding: 12px;
+    background: #4a90d9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.2s;
+  }
+
+  .form-area button:hover {
+    background: #3a7bc8;
+  }
+  /* ====== 列表区域 ====== */
+  .list-area {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  .list-area h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+    color: #2c3e50;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    text-align: left;
+    padding: 10px 0;
+    font-size: 13px;
+    color: #999;
+    border-bottom: 2px solid #f0f0f0;
+  }
+
+  td {
+    padding: 12px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #f5f5f5;
+  }
+
+  /* 暂无记录那行居中 */
+  td[colspan="5"] {
+    text-align: center;
+    color: #bbb;
+    padding: 40px 0;
+  }
+  .del-btn {
+    padding: 4px 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    background: #fff;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+
+  .del-btn:hover {
+    background: #e74c3c;
+    color: #fff;
+    border-color: #e74c3c;
+  }
